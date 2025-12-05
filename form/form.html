@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My title</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script src="/static/index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="textHint">Idea notebook project form</h1>
+            <h4 class="textHint">Later, options for uniqueId will be added</h4>
+
+            <div class="inputRect">
+                <div class="switchZone">
+                    <p class="textHint">Idea</p>
+                    <label class="switch">
+                        <input id="ideaSwitch" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <p class="textHint">Bug</p>
+                </div>
+
+                <h1 class="textHint">Input title</h1>
+                <input id="titleInput" class="inputField"/>
+
+                <h1 class="textHint">Input details</h1>
+                <textarea id="detailsInput" class="inputField"></textarea>
+
+                <p id="submitReceivedText" class="textHint"> </p>
+            </div>
+
+            <div class="submitRect" onclick="submit()">
+                <button class="submitButton">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>

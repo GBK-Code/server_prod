@@ -1,0 +1,134 @@
+html, body {
+    height: 100%
+}
+
+body {
+    overflow: hidden;
+    background-color: #362c36;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+}
+
+.inputRect {
+    background-color:#4d4c59;
+    border-radius: 30px;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 1opx;
+    width: 30%;
+    box-shadow: -5px -5px 100px 10px #1e1e1e;
+}  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.inputField {
+    border-radius: 5px;
+    background-color:#71777d;
+    display: flex;
+    align-items: center;
+    color: #362c36;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    border: none;
+    width: 80%;
+    font-size: large;
+}
+
+.submitRect {
+    margin-top: 10px;
+    padding: 10px;
+    background-color:#4d4c59;
+    border-radius: 10px;
+}
+
+.submitButton {
+    background-color: #4d4c59;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.submitRect:hover{
+    background-color: #5d5c6a;
+    cursor: pointer;
+}
+
+.submitRect:hover .submitButton{
+    background-color: #5d5c6a;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+}
+
+.textHint {
+    font-family: 'Franklin Gothic Medium';
+    color: #f7f6f0
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 40px;
+  left: 5px;
+  bottom: 4px;
+  border-radius: 10px;
+  background-color: #71777d;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(40px);
+}
+
+.switchZone {
+    align-items: center;
+    display: flex;
+}
