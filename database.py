@@ -7,7 +7,7 @@ DB_URL = os.environ.get("DATABASE_URL")
 
 engine = create_engine(
     DB_URL,
-    connect_args={"check_same_thread": False},
+    connect_args={"sslmode": "required"},
     pool_pre_ping=True
 )
 
