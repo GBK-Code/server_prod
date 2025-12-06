@@ -2,7 +2,8 @@ async function submit() {
     const titleText = document.getElementById("titleInput").value;
     const detailsText = document.getElementById("detailsInput").value;
 
-    const submittedText = document.getElementById("submitReceivedText")
+    const submittedText = document.getElementById("messageText")
+    const messageBox = document.getElementById("message")
     const switchType = document.getElementById("ideaSwitch").checked
 
     var type = ""
@@ -35,15 +36,16 @@ async function submit() {
         {
             submittedText.textContent = "Already written"
         }
+        messageBox.style.opacity = 1
         
     } else {
         console.log(response);
     }
 
-    setTimeout(resetSubmittedText, 600, submittedText)
+    setTimeout(resetSubmittedText, 1000, messageBox)
 }
 
 
-function resetSubmittedText(text) {
-    text.textContent = " "
+function resetSubmittedText(msgBox) {
+    msgBox.style.opacity = 0
 }

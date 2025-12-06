@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My title</title>
+        <title>Report form</title>
         <link rel="stylesheet" href="/static/style.css">
         <script src="/static/index.js"></script>
     </head>
 
     <body>
-        <div class="container">
-            <h2 class="textHint">Idea notebook project form</h1>
-            <h4 class="textHint">Later, options for uniqueId will be added</h4>
+        <div id="message" class="report-rect">
+            <p id="messageText" class="text"></p>
+        </div>
+        <div class="report-rect">
+            <p id="intro" class="text">Idea notebook project</p>
+            <p class = "text">Report form</p>
 
-            <div class="inputRect">
-                <div class="switchZone">
-                    <p class="textHint">Idea</p>
-                    <label class="switch">
-                        <input id="ideaSwitch" type="checkbox">
-                        <span class="slider"></span>
-                    </label>
-                    <p class="textHint">Bug</p>
-                </div>
+            <h1 id="titleTxt" class="text">Title of report</h1>
+            <input id="titleInput" class="user-input">
+            <h1 id="detailsTxt" class="text">Details</h1>
+            <textarea id="detailsInput" class="user-input"></textarea>
+            
+            <div class="switchZone">
+                <p class="textHint">Idea</p>
 
-                <h1 class="textHint">Input title</h1>
-                <input id="titleInput" class="inputField"/>
+                <label class="switch">
+                    <input id="ideaSwitch" type="checkbox">
+                    <span class="slider"></span>
+                </label>
 
-                <h1 class="textHint">Input details</h1>
-                <textarea id="detailsInput" class="inputField"></textarea>
-
-                <p id="submitReceivedText" class="textHint"> </p>
+                <p class="textHint">Bug</p>
             </div>
-
-            <div class="submitRect" onclick="submit()">
-                <button class="submitButton">Submit</button>
-            </div>
+            
+            <button id="submitButton" onclick="submit()">Submit</button>   
         </div>
     </body>
 </html>
